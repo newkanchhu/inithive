@@ -5,11 +5,18 @@
                 Logo
             </div>
             <div class="col-6 col-md-8">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Contact</a></li>
+                <?php 
+                $links = [
+                    'Home' => '#',
+                    'About' => '#',
+                    'Company' => '#',
+                    'Contact Us' => '#',
+                ];
+                ?>
+                <ul class="d-flex">
+                    <?php foreach ($links as $string => $url): ?>
+                    <li><a href="<?=$url?>"><?=$string?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>

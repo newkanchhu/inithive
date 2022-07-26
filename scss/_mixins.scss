@@ -1,0 +1,33 @@
+@mixin ieFix() {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content;
+    }
+}
+
+@mixin iosFix() {
+    @supports (-webkit-touch-callout: none) {
+        @content;
+    }
+}
+
+@mixin mediaMin($breakpoint) {
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+        @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+@mixin mediaMax($breakpoint) {
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+        @media (max-width: #{map-get($grid-breakpoints, $breakpoint) - 1px}) {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}
