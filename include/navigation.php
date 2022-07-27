@@ -1,39 +1,52 @@
-<nav>
-    <div class="container top-menu">
-        <div class="row ">
-            <div class="col">
-                <ul class="d-flex justify-content-end">
-                    <li><a href="#"><em class="fa fa-search"></em></a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Login <em class="fa fa-lock"></em></a></li>
-                </ul>
+<nav class="main-nav shadow-sm">
+    <section class="bg-light main-nav__top">
+        <div class="container top-menu">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Login <i class="fa fa-lock"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container main-menu">
-        <div class="row">
-            <div class="col-6 col-md-4">
-                <a title="Inithive" href=""><img class="lozad img-fluid" data-src="images/logo.png"></a>
-            </div>
-            <div class="col-6 col-md-8">
-                <?php 
-                $links = [
-                    'Multi-Cloud' => '#',
-                    'App Platform' => '#',
-                    'Cloud & Edge Infrastructure' => '#',
-                    'Anywhere Workspace' => '#',
-                    'Security & Networking' => '#',
-                    'Partners' => '#',
-                ];
-                ?>
-                <ul class="d-flex">
-                    <?php foreach ($links as $string => $url): ?>
-                    <li><a href="<?=$url?>"><?=$string?></a></li>
-                    <?php endforeach; ?>
-                    <li><a href="#" class="btn btn-primary">Get a Quote</a></li>
-                </ul>
+    </section>
+    <section class="main-nav__main">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-1">
+                    <a title="Inithive" href="/">
+                        <img class="lozad main-nav__logo" data-src="images/logo.png">
+                    </a>
+                </div>
+                <div class="col-6 col-md-11 justify-content-sm-end d-flex">
+                    <button type="button" class="btn d-xl-none main-nav__burger" title="Open Menu">
+                        <em class="fas fa-bars"></em>
+                    </button>
+                    <div class="main-nav__wrapper">
+                        <button type="button" class="btn d-xl-none main-nav__burger" title="Close menu">
+                            <em class="fa fa-times"></em>
+                        </button>
+                        <ul>
+                            <li><a href="#">Multi-Cloud</a></li>
+                            <li class="has-dropdown"><a href="#">App Platform</a>
+                                <ul>
+                                    <li><a href="#">menu 1</a></li>
+                                    <li><a href="#">menu 2</a></li>
+                                    <li><a href="#">menu 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cloud & Edge Infrastructure</a></li>
+                            <li><a href="#">Anywhere Workspace</a></li>
+                            <li><a href="#">Security & Networking</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li class="align-self-center ps-xl-4"><a href="#" class="btn btn-primary">Get a Quote</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </nav>

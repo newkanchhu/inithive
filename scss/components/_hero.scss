@@ -1,0 +1,13 @@
+.hero {
+    padding: 50px 0;
+    background: {
+        position: center right;
+        repeat: no-repeat;
+        color: blue;
+        size: cover;
+        image: url('/inithive/images/testimonial-bg-img.jpg');
+    }
+    @include mediaMin(md) {
+        padding: 100px 0;
+    }
+}

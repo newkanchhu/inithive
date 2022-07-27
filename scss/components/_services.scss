@@ -1,0 +1,23 @@
+.services {
+    
+    &__item {
+        position: relative;
+        text-align: center;
+
+        img {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        h3 {
+            transition: color 0.3s ease;
+        }
+
+        // hover 
+        &:hover {
+            h3 {
+                color: $primary;
+            }
+        }
+    }
+}

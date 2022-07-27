@@ -1,6 +1,16 @@
 $font-primary: 'Source Sans Pro', sans-serif;
+$font-icon: 'Font Awesome 5 Free';
 
-$primary: #f00;
-$white: #ffffff;
-$black: #111111;
+$primary: #0071BB;
+$white: #fff;
+$black: #000;
+$dark-grey: #6C6C6C;
+$light-grey: #EDEDED;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;

@@ -3,7 +3,7 @@
 <section class="hero">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-md-6">
                 <h1 class="text-uppercase">Choosing the right cloud solution</h1>
                 <p>We help our customers choose the right cloud platform that gives the right balance of cost, ease of use and reliability.</p>
                 <a href="#" class="btn btn-primary mt-4">View More</a>
@@ -11,16 +11,21 @@
         </div>
     </div>
 </section>
+
 <section>
     <div class="pt-4 pb-4 text-center bg-light mb-4">We help customers migrate their existing solutions to AWS, Azure and GCP</div>
 </section>
+
 <section class="services">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 text-center">
-                <div><img class="lozad img-fluid" data-src="images/s1.png"></div>
-                <h4><a href="">Cloud Adoption & Migration Services</a></h4>
-                <p class="text-center">Choosing the right cloud solution and managing your cloud migration is a complex undertaking. We help our customers</p>
+            <div class="col-md-4">
+                <div class="services__item">
+                    <img class="lozad img-fluid" data-src="images/s1.png">
+                    <h3 class="h4">Cloud Adoption & Migration Services</h3>
+                    <p class="text-center">Choosing the right cloud solution and managing your cloud migration is a complex undertaking. We help our customers</p>
+                    <a class="stretched-link" href="#"></a>
+                </div>
             </div>
             <div class="col-md-4 text-center">
                 <div><img class="lozad img-fluid" data-src="images/s2.png"></div>

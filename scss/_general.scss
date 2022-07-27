@@ -24,11 +24,34 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+	color: $dark-grey;
+    font-family: $font-primary;
     font-size: 16px;
     line-height: 1.5;
-    background: #fafafa;
+    background: $white;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 16px 0;
+	color: $black;
+}
+
+a {
+	color: $dark-grey;
+	text-decoration: none;
+}
+
+// Override Bootstrap styles
+:root {
+	--bs-btn-border-radius: 0px !important;
+}
+
+.btn-primary {
+	background-color: $primary !important;
+	border-color: $primary !important;
+}
+
+.bg-light {
+	background-color: $light-grey !important;
 }

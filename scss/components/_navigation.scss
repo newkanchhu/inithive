@@ -1,9 +1,193 @@
-nav.main-menu {
-    ul {
-        list-style: none;
+.main-nav {
 
-        li a {
-            color: $primary !important;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        list-style: none;
+    }
+
+    a {
+        display: block;
+        font-size: 18px;
+    }
+
+    &__logo {
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        max-height: 60px;
+    }
+
+    &__top {
+        padding: 8px 0;
+        
+        a {
+            font-size: 16px; 
+
+            i{
+                color: $primary;
+            }
         }
     }
+
+    &__main {
+        padding: 16px 0;
+
+        ul li {
+            position: relative;
+            max-width: 120px;
+            margin: 0 5px;
+
+            @include mediaMax(xl) {
+                margin-bottom: 12px;
+
+                &.has-dropdown:after {
+                    position: absolute;
+                    top: -2px;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 9;
+                    width: 30px;
+                    height: 30px;
+                    color: $white;
+                    font-family: $font-icon;
+                    font-weight: 900;
+                    text-align: center;
+                    content: "\f078";
+                    cursor: pointer;
+                }
+
+                &.has-dropdown.active:after {
+                    content: "\f077";
+                }
+            }
+            
+            & > ul {
+                max-height: 0;
+                overflow: hidden;
+                transform: translateX(-30px);
+                transition: all 0s, opacity 0.3s ease;
+                @include mediaMin(xl) {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    display: block;
+                    width: 240px;
+                    background-color: $white;
+                    border: 1px solid $light-grey;
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+
+                li {
+                    max-width: none !important;
+                    margin: 0;
+
+                    a {
+                        display: block;
+                        padding: 2px 16px;
+                        text-align: left;
+                        transition: background-color 0.3s ease;
+                        @include mediaMin(xl) {
+                            padding: 8px 16px;
+
+                            &:hover {
+                                background-color: $light-grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.active > ul {
+                @include mediaMax(xl) {
+                    max-height: 1000px;
+                    opacity: 1;
+                    transform: translateX(0);
+                    transition: all 0s 0.3s, opacity 0.3s ease;
+                }
+            }
+            &:hover > ul {
+                @include mediaMin(xl) {
+                    max-height: 1000px;
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition: all 0s 0.3s, opacity 0.3s ease;
+                }
+            }
+        }
+
+        @include mediaMin(xl) {
+            ul li:last-child {
+                max-width: 150px;
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+
+            &.btn.btn-primary {
+                height: auto;
+                padding: 4px 16px;
+                white-space: nowrap;
+                justify-content: center;
+            }
+        }
+    }
+
+    // overlay nav wrapper
+    @include mediaMax(xl) {
+        &__wrapper {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100vw;
+            bottom: 0;
+            padding: 50px;
+            background: rgba($black, 0.9);
+            opacity: 0;
+            transition: all 0.5s ease;
+
+            .main-nav__burger {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                display: none;
+                color: $white;
+            }
+
+            &.active {
+                opacity: 1;
+                transform: translateX(-100%);
+
+                .main-nav__burger {
+                    display: block;
+                }
+            }
+        }
+
+        &__main {
+            padding: 20px;
+
+            ul {
+                display: block;
+
+                li {
+                    max-width: none;
+
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    // Block Element Modifiers
 }
