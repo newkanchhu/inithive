@@ -1,5 +1,9 @@
 nav.main-menu {
-    ul.nav {
-        
+    ul {
+        list-style: none;
+
+        li a {
+            color: $primary !important;
+        }
     }
 }
