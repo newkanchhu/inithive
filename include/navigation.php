@@ -4,9 +4,12 @@
             <div class="row">
                 <div class="col">
                     <ul>
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li class="d-flex">
+                            <input type="text" name="search" class="search-input">
+                            <a class="search-button"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="#">Login <i class="fa fa-lock"></i></a></li>
                     </ul>
                 </div>
@@ -17,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-7 col-md-1">
-                    <a title="Inithive" href="/">
+                    <a title="Inithive" href="index.php">
                         <img class="lozad main-nav__logo" data-src="images/logo.png">
                     </a>
                 </div>

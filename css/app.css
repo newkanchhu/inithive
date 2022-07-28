@@ -253,6 +253,18 @@ p {
   gap: 20px;
   list-style: none;
 }
+.main-nav ul .search-input {
+  display: none;
+  padding: 2px 10px;
+  border: 1px solid #6C6C6C;
+  font-size: 14px;
+  height: 24px;
+  width: 250px;
+  margin-right: 8px;
+}
+.main-nav ul .search-button {
+  cursor: pointer;
+}
 .main-nav a {
   display: block;
   font-size: 18px;
@@ -446,6 +458,87 @@ p {
 .services__item:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.top-banner {
+  padding: 50px 0;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/inithive/images/innerpage-bg.jpg");
+  background-attachment: fixed;
+}
+.top-banner__content {
+  color: #fff;
+}
+.top-banner__title {
+  font-size: 35px;
+}
+.top-banner__title span {
+  color: #ff921e;
+}
+
+.innerpage-wrap {
+  padding: 40px 0;
+}
+.innerpage-wrap__title {
+  font-size: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+.innerpage-wrap .video-wrap {
+  position: relative;
+}
+.innerpage-wrap .video-wrap img {
+  object-fit: cover;
+}
+.innerpage-wrap .video-wrap__video-icon-wrap {
+  position: absolute;
+  height: auto;
+  width: auto;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  right: 0;
+  margin: auto;
+}
+.innerpage-wrap .video-wrap__video-icon-wrap a {
+  background: radial-gradient(rgba(14, 101, 243, 0.8) 60%, white 62%);
+  box-shadow: 0px 0px 25px 3px rgba(14, 101, 243, 0.8);
+  width: 70px;
+  height: 70px;
+  background: #0e65f3;
+  border-radius: 50%;
+  line-height: 70px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  animation: playButtonGlow 4s infinite;
+}
+
+@keyframes playButtonGlow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

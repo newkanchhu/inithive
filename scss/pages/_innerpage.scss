@@ -1,0 +1,91 @@
+.top-banner{
+    padding: 50px 0;
+    background:{
+        position: center right;
+        repeat: no-repeat;
+        size: cover;
+        image: url('/inithive/images/innerpage-bg.jpg');
+        attachment:fixed;
+    }
+
+    &__content{
+        color: $white;
+    }
+
+    &__title{
+        font-size: 35px;
+
+        span{
+            color: $orange;
+        }
+    }
+
+}
+
+.innerpage-wrap{
+    padding: 40px 0;
+
+    &__title{
+        font-size: 25px;
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    .video-wrap{
+        position: relative;
+
+        img{
+            object-fit: cover;
+        }
+
+        &__video-icon-wrap{
+            position: absolute;
+            height: auto;
+            width: auto;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            height: 100%;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-align: center;
+            right: 0;
+            margin: auto;
+
+            a{
+                background: radial-gradient( rgba(14, 101, 243, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+                box-shadow: 0px 0px 25px 3px rgb(14 101 243 / 80%);
+                width: 70px;
+                height: 70px;
+                background: #0e65f3;
+                border-radius: 50%;
+                line-height: 70px;
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                color: #fff;
+                animation:  playButtonGlow 4s infinite;
+            }
+        }
+
+    }
+}
+@keyframes playButtonGlow {
+    0% {
+        transform:  scale(1);
+    }
+    50% {
+        transform:  scale(1.25);
+    }
+    100% {
+        transform:  scale(1);
+    }
+}

@@ -10,4 +10,11 @@ $(function() {
     $('li.has-dropdown').on('click', e => {
         $(e.currentTarget).toggleClass('active');
     });
+
+    //search hide show
+    $(document).ready(function(){
+        $(".search-button").click(function(){
+          $(".search-input").toggle();
+        });
+    });
 });
