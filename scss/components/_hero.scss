@@ -3,11 +3,27 @@
     background: {
         position: center right;
         repeat: no-repeat;
-        color: blue;
         size: cover;
-        image: url('/inithive/images/testimonial-bg-img.jpg');
+        image: url('/inithive/images/slider.jpg');
     }
     @include mediaMin(md) {
         padding: 100px 0;
     }
+
+    .hero-content{
+        
+        p{
+            font-size: 25px;
+            color: $dark-grey;
+        }
+        a{
+            padding: 10px 30px;
+            
+            
+        }
+    }
+}
+
+.headline{
+    font-size: 25px;
 }

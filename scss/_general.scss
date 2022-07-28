@@ -42,6 +42,10 @@ a {
 	text-decoration: none;
 }
 
+p{
+	line-height: 1.8;
+}
+
 // Override Bootstrap styles
 :root {
 	--bs-btn-border-radius: 0px !important;

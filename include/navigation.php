@@ -16,12 +16,12 @@
     <section class="main-nav__main">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-1">
+                <div class="col-7 col-md-1">
                     <a title="Inithive" href="/">
                         <img class="lozad main-nav__logo" data-src="images/logo.png">
                     </a>
                 </div>
-                <div class="col-6 col-md-11 justify-content-sm-end d-flex">
+                <div class="col-2 col-md-9 justify-content-sm-end d-flex">
                     <button type="button" class="btn d-xl-none main-nav__burger" title="Open Menu">
                         <em class="fas fa-bars"></em>
                     </button>
@@ -42,9 +42,12 @@
                             <li><a href="#">Anywhere Workspace</a></li>
                             <li><a href="#">Security & Networking</a></li>
                             <li><a href="#">Partners</a></li>
-                            <li class="align-self-center ps-xl-4"><a href="#" class="btn btn-primary">Get a Quote</a></li>
+                            <!--<li class="align-self-center ps-xl-4"><a href="#" class="btn btn-primary">Get a Quote</a></li>-->
                         </ul>
                     </div>
+                </div>
+                <div class="col-3 col-md-2 container-rightbtn">
+                    <a aria-label="" class="btn btn-primary" href="" title="" target="_self">Get a Quote</a>
                 </div>
             </div>
         </div>
