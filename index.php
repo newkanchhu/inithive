@@ -82,7 +82,7 @@
     </div>
 </section>
 
-<?php include 'include/tesimonial.php'; ?>
+<?php include 'include/testimonial.php'; ?>
 
 <section class="cta text-center">
     <div class="cta__title">Do you need our service today?</div>

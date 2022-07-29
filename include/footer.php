@@ -52,40 +52,16 @@
 <!-----------for image loader-----------------> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js"></script>
 <script>
-  lozad('.lozad', {
+lozad('.lozad', {
     load: function(el) {
-      el.src = el.dataset.src;
-      el.onload = function() {
-        el.classList.add('fadelazy')
+        el.src = el.dataset.src;
+        el.onload = function() {
+            el.classList.add('fadelazy')
+        }
     }
-}
 }).observe();
 </script>
-<!------------for homepage testimonial--------->
+<!------------testimonial carousel--------->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-    // for testimonial 
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      responsive:{
-        0:{
-          items:1
-      },
-      600:{
-          items:2
-      },
-      1000:{
-          items: 3,
-          nav: true,
-          loop: true,
-          margin: 20
-      }
-  }
-});
-})
-</script> 
 </body>
 </html>

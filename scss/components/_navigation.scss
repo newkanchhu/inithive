@@ -158,6 +158,10 @@
 
     // overlay nav wrapper
     @include mediaMax(xl) {
+        .main-nav__burger{
+            background-color: transparent !important;
+        }
+
         &__wrapper {
             position: fixed;
             top: 0;
@@ -165,7 +169,7 @@
             width: 100vw;
             bottom: 0;
             padding: 50px;
-            background: rgba($black, 0.9);
+            background: rgba($black, 1);
             opacity: 0;
             transition: all 0.5s ease;
 
@@ -180,6 +184,7 @@
             &.active {
                 opacity: 1;
                 transform: translateX(-100%);
+                z-index: 11;
 
                 .main-nav__burger {
                     display: block;

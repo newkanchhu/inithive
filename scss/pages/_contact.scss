@@ -1,0 +1,58 @@
+.contact-top-banner{
+    position: relative;
+    padding: 50px 0;
+    background:{
+        position: center right;
+        repeat: no-repeat;
+        size: cover;
+        image: url('../images/contact-bg.jpg');
+        attachment:fixed;
+    }
+
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 70%);
+        top: 0;
+    }
+
+    &__content{
+        color: $white;
+        z-index: 1;
+        position: relative;
+    }
+
+    &__title{
+        font-size: 35px;
+
+        span{
+            color: $orange;
+        }
+    }
+    
+}
+
+.contact {
+
+    &__form {
+        // border: 1px solid #ccc;
+    }
+    
+    &__map {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

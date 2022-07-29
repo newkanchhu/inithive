@@ -19,12 +19,12 @@
     <section class="main-nav__main">
         <div class="container">
             <div class="row">
-                <div class="col-7 col-md-1">
+                <div class="col-4 col-md-1">
                     <a title="Inithive" href="index.php">
                         <img class="lozad main-nav__logo" data-src="images/logo.png">
                     </a>
                 </div>
-                <div class="col-2 col-md-9 justify-content-sm-end d-flex">
+                <div class="col-5 col-md-9 justify-content-sm-end d-flex">
                     <button type="button" class="btn d-xl-none main-nav__burger" title="Open Menu">
                         <em class="fas fa-bars"></em>
                     </button>
@@ -33,7 +33,7 @@
                             <em class="fa fa-times"></em>
                         </button>
                         <ul>
-                            <li><a href="#">Multi-Cloud</a></li>
+                            <li><a href="service.php">Multi-Cloud</a></li>
                             <li class="has-dropdown"><a href="#">App Platform</a>
                                 <ul>
                                     <li><a href="#">menu 1</a></li>

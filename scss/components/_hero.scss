@@ -4,7 +4,7 @@
         position: center right;
         repeat: no-repeat;
         size: cover;
-        image: url('/inithive/images/slider.jpg');
+        image: url('../images/slider.jpg');
     }
     @include mediaMin(md) {
         padding: 100px 0;
