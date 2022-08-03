@@ -331,6 +331,7 @@ p {
     background-color: #0071BB;
     opacity: 0;
     transform: translateY(-30px);
+    z-index: 11;
   }
 }
 .main-nav__main ul li > ul li {
