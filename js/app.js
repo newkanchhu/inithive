@@ -7,7 +7,7 @@ $(function() {
     });
 
     // mobile sub-nav handler
-    $('li.has-dropdown').on('click', e => {
+    $('li.has-dropdown, li.has-sub-dropdown').on('click', e => {
         $(e.currentTarget).toggleClass('active');
     });
 

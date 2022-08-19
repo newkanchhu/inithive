@@ -34,10 +34,17 @@
                         </button>
                         <ul>
                             <li><a href="service.php">Multi-Cloud</a></li>
-                            <li class="has-dropdown"><a href="#">App Platform</a>
+                            <li class="has-dropdown"><a href="#">App Platform <i class="fa fa-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">menu 1</a></li>
-                                    <li><a href="#">menu 2</a></li>
+                                    <li class="has-sub-dropdown">
+                                        <a href="#">menu 2</a>
+                                        <ul>
+                                            <li><a href="#">menu 2.1</a></li>
+                                            <li><a href="#">menu 2.2</a></li>
+                                            <li><a href="#">menu 2.3</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">menu 3</a></li>
                                 </ul>
                             </li>

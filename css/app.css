@@ -267,7 +267,7 @@ p {
 }
 .main-nav a {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
 }
 .main-nav__logo {
   display: inline-block;
@@ -289,14 +289,14 @@ p {
 }
 .main-nav__main ul li {
   position: relative;
-  max-width: 120px;
+  max-width: 130px;
   margin: 0 5px;
 }
 @media (max-width: 1199px) {
   .main-nav__main ul li {
     margin-bottom: 12px;
   }
-  .main-nav__main ul li.has-dropdown:after {
+  .main-nav__main ul li.has-dropdown:after, .main-nav__main ul li.has-sub-dropdown:after {
     position: absolute;
     top: -2px;
     right: 0;
@@ -311,7 +311,7 @@ p {
     content: "\f078";
     cursor: pointer;
   }
-  .main-nav__main ul li.has-dropdown.active:after {
+  .main-nav__main ul li.has-dropdown.active:after, .main-nav__main ul li.has-sub-dropdown.active:after {
     content: "\f077";
   }
 }
@@ -328,6 +328,7 @@ p {
     left: 0;
     display: block;
     width: 240px;
+    overflow: visible;
     background-color: #0071BB;
     opacity: 0;
     transform: translateY(-30px);
@@ -354,6 +355,10 @@ p {
     color: #000;
   }
 }
+.main-nav__main ul li.has-sub-dropdown > ul {
+  top: 0;
+  left: 100%;
+}
 @media (max-width: 1199px) {
   .main-nav__main ul li.active > ul {
     max-height: 1000px;
@@ -375,11 +380,45 @@ p {
     max-width: 150px;
   }
 }
+.main-nav__main .has-dropdown,
+.main-nav__main .has-sub-dropdown {
+  position: relative;
+}
+.main-nav__main .has-dropdown:hover:before,
+.main-nav__main .has-sub-dropdown:hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #0071BB;
+  margin-left: 15px;
+}
+.main-nav__main .has-dropdown a i,
+.main-nav__main .has-sub-dropdown a i {
+  font-size: 12px;
+  margin: 3px 4px 0;
+}
+.main-nav__main .has-dropdown ul li a:hover:before,
+.main-nav__main .has-sub-dropdown ul li a:hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  margin-left: 15px;
+}
 .main-nav__main a {
   display: flex;
   align-items: center;
   height: 100%;
   text-align: center;
+  position: relative;
 }
 .main-nav__main a.btn.btn-primary {
   height: auto;
