@@ -18,13 +18,13 @@
     </section>
     <section class="main-nav__main">
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-md-1">
+            <div class="row-nav">
+                <div class="row-nav__logo">
                     <a title="Inithive" href="index.php">
                         <img class="lozad main-nav__logo" data-src="images/logo.png">
                     </a>
                 </div>
-                <div class="col-5 col-md-9 justify-content-sm-end d-flex">
+                <div class="row-nav__menu d-flex">
                     <button type="button" class="btn d-xl-none main-nav__burger" title="Open Menu">
                         <em class="fas fa-bars"></em>
                     </button>
@@ -34,7 +34,7 @@
                         </button>
                         <ul>
                             <li><a href="service.php">Multi-Cloud</a></li>
-                            <li class="has-dropdown"><a href="#">App Platform <i class="fa fa-chevron-down"></i></a>
+                            <li class="has-dropdown"><a href="#">App Platform</a>
                                 <ul>
                                     <li><a href="#">menu 1</a></li>
                                     <li class="has-sub-dropdown">
@@ -50,13 +50,25 @@
                             </li>
                             <li><a href="#">Cloud & Edge Infrastructure</a></li>
                             <li><a href="#">Anywhere Workspace</a></li>
-                            <li><a href="#">Security & Networking</a></li>
+                            <li class="has-dropdown">
+                                <a href="#">Security & Networking</a>
+                                <ul>
+                                    <li class="has-sub-dropdown"><a href="#">menu 3.1</a>
+                                        <ul>
+                                            <li><a href="#">menu  3.1.1</a></li>
+                                            <li><a href="#">menu  3.1.2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">menu 3.2</a></li>
+                                    <li><a href="#">menu 3.3</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Partners</a></li>
                             <!--<li class="align-self-center ps-xl-4"><a href="#" class="btn btn-primary">Get a Quote</a></li>-->
                         </ul>
                     </div>
                 </div>
-                <div class="col-3 col-md-2 container-rightbtn">
+                <div class="row-nav__button">
                     <a aria-label="" class="btn btn-primary" href="" title="" target="_self">Get a Quote</a>
                 </div>
             </div>
